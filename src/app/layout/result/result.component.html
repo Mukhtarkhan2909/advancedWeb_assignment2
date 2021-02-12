@@ -1,0 +1,20 @@
+<table class="table">
+  <thead class="thead-light">
+  <tr style="text-align: center">
+    <th>Date</th>
+    <th>Distance in meters</th>
+    <th>Time</th>
+    <th>Average speed</th>
+    <th>Options</th>
+  </tr>
+  </thead>
+  <tbody style="text-align: center">
+  <tr *ngFor="let l of item">
+    <td>{{l.date}}</td>
+    <td>{{l.distance}}</td>
+    <td>{{l.time}}</td>
+    <td>{{l.speed}}</td>
+    <td>{{l.option}}</td>
+  </tr>
+  </tbody>
+</table>

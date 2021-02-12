@@ -1,0 +1,21 @@
+<h1 class="mb-0">Add record</h1>
+<form class="needs-validation" novalidate="">
+  <div class="row g-3">
+    <div class="col-12">
+      <label for="date" class="form-label">Jogging date: </label>
+      <input type="text" class="form-control" #date id="date" placeholder="mm/dd/yyyy">
+    </div>
+    <div class="col-12">
+      <label for="distance" class="form-label">Distance<span class="text-muted">(m)</span></label>
+      <input type="number" class="form-control" #distance id="distance" placeholder="0">
+    </div>
+    <div class="col-12">
+      <label for="time" class="form-label">Time <span class="text-muted">(s)</span></label>
+      <input type="number" class="form-control" #time id="time" placeholder="0">
+    </div>
+    <div class="col-12">
+      <a class="btn btn-lg btn-primary" href="#" role="button" (click)="saveToTable(date.value, distance.valueAsNumber, time.valueAsNumber)"
+         (click)="addNewItem()">Save</a>
+    </div>
+  </div>
+</form>
